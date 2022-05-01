@@ -11,37 +11,39 @@
 </head>
 
 <body>
-    <div class="card border-light mb-3 position-absolute top-50 start-50 translate-middle" style="max-width: 18rem;">
-        <div class="card-header text-center"></div>
-        <div class="card-body text-center">
-            <p>¿Se desea registrar?</p>
-
-            <div class="form-check">
-                <input class="form-check-input position-relative top-0 start-50 translate-middle-x" type="radio"
-                    name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Sí
-                </label>
+    <form action="#">
+        <div class="card border-light mb-3 position-absolute top-50 start-50 translate-middle" style="max-width: 18rem;">
+            <div class="card-header text-center"></div>
+            <div class="card-body text-center">
+                <p>¿Se desea registrar?</p>
+    
+                <div class="form-check">
+                    <input class="form-check-input position-relative top-0 start-50 translate-middle-x" type="radio"
+                        name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Sí
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input position-relative top-0 start-50 translate-middle-x" type="radio"
+                        name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        No
+                    </label>
+                </div>
+                <br>
+    
+                <div class="input-group mb-3 mx-auto" style="width: 200px;">
+                    <label for="nombre">
+                        <span><b>Nombre</b></span>
+                        <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1"
+                            id="nombre">
+                    </label>
+                </div>
+    
             </div>
-            <div class="form-check">
-                <input class="form-check-input position-relative top-0 start-50 translate-middle-x" type="radio"
-                    name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
-                    No
-                </label>
-            </div>
-            <br>
-
-            <div class="input-group mb-3 mx-auto" style="width: 200px;">
-                <label for="nombre">
-                    <span><b>Nombre</b></span>
-                    <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1"
-                        id="nombre">
-                </label>
-            </div>
-
         </div>
-    </div>
+    </form>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
