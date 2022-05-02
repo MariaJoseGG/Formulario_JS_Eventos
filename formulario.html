@@ -15,7 +15,6 @@
     <form action="">
         <div class="card border-light mb-3 position-absolute top-50 start-50 translate-middle"
             style="max-width: 18rem;">
-            <div class="card-header text-center"></div>
             <div class="card-body text-center">
                 <p>¿Se desea registrar?</p>
 
@@ -39,7 +38,7 @@
                     <label for="nombre">
                         <span><b>Nombre</b></span>
                         <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1"
-                            id="nombre">
+                            id="nombre" onfocusout="alertName()">
                     </label>
                 </div>
 
@@ -68,15 +67,19 @@
             <div class="input-group mb-3 mx-auto" style="width: 200px;">
                 <label for="contrasena">
                     <span><b>Contraseña</b></span>
-                    <input type="password" class="form-control" placeholder="********" aria-describedby="basic-addon2"
-                        id="contrasena">
+                    <input type="password" class="form-control" placeholder="********"
+                        pattern="(?=.*[A-Za-z])(?=.*[@#$%]).{8,}"
+                        title="Debe contener una letra mayúscula, una minúscula, un caracter especial y como mínimo 8 caracteres"
+                        aria-describedby="basic-addon2" id="contrasena" onfocusout="validar1()" required>
                 </label>
             </div>
             <div class="input-group mb-3 mx-auto" style="width: 200px;">
                 <label for="contConfir">
                     <span><b>Confirmar contraseña</b></span>
-                    <input type="password" class="form-control" placeholder="********" aria-describedby="basic-addon2"
-                        id="contConfir">
+                    <input type="password" class="form-control" placeholder="********"
+                        pattern="^(?=.*[A-Za-z])(?=.*[@#$%]).{8,}$"
+                        title="Debe contener una letra mayúscula, una minúscula, un caracter especial y como mínimo 8 caracteres"
+                        aria-describedby="basic-addon2" id="contConfir" onfocusout="validar2()">
                 </label>
             </div>
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
