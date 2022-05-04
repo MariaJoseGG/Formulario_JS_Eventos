@@ -1,4 +1,26 @@
+<<<<<<< HEAD
+function desplegar() {
+    if(document.getElementById("flexRadioDefault1").checked) {
+        document.getElementById("lista").innerHTML=
+        `
+        <label for="item1">
+            <input type="checkbox" id="item1">
+            <span>1</span>
+        </label>
+        <br>
+        <label for="item2">
+            <input type="checkbox" id="item2">
+            <span>2</span>
+        </label>
+        `;
+    }
+    else {
+        document.getElementById("lista").innerHTML=` `;
+    }
+}
+=======
 
+>>>>>>> f07b190d32f9b7cad2732f19764cd0e6508799db
 function apellido4(){
     let ape=document.getElementById("apellido").value;
     let sinEspacios=ape.replace(/ /g, "");
