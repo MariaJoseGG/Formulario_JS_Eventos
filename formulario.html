@@ -17,23 +17,23 @@
             style="max-width: 18rem;">
             <div class="card-body text-center">
                 <p>¿Se desea registrar?</p>
-
                 <div class="form-check">
                     <input class="form-check-input position-relative top-0 start-50 translate-middle-x" type="radio"
-                        name="flexRadioDefault" id="flexRadioDefault1">
+                        name="flexRadioDefault" id="flexRadioDefault1" onclick="desplegar()">
                     <label class="form-check-label" for="flexRadioDefault1">
                         Sí
                     </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input position-relative top-0 start-50 translate-middle-x" type="radio"
-                        name="flexRadioDefault" id="flexRadioDefault2">
+                        name="flexRadioDefault" id="flexRadioDefault2" onclick="desplegar()">
                     <label class="form-check-label" for="flexRadioDefault2">
                         No
                     </label>
                 </div>
                 <br>
-
+                <div id="lista"></div>
+                <br>
                 <div class="input-group mb-3 mx-auto" style="width: 200px;">
                     <label for="nombre">
                         <span><b>Nombre</b></span>

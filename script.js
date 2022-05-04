@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function desplegar() {
     if(document.getElementById("flexRadioDefault1").checked) {
         document.getElementById("lista").innerHTML=
@@ -18,9 +17,7 @@ function desplegar() {
         document.getElementById("lista").innerHTML=` `;
     }
 }
-=======
 
->>>>>>> f07b190d32f9b7cad2732f19764cd0e6508799db
 function apellido4(){
     let ape=document.getElementById("apellido").value;
     let sinEspacios=ape.replace(/ /g, "");
