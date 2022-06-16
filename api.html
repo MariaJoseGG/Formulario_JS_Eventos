@@ -1,0 +1,9 @@
+var sumaTradicional=function(a,b){
+    return a+b;
+}
+var sumaConFlecha =(a,b) => a+b;
+
+let url='https://www.datos.gov.co/resource/urxn-xehk.json'
+fetch(url)
+.then(respuesta=>respuesta.json())
+.then(data=>{console.log(data);})
